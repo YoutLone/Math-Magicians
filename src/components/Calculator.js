@@ -1,5 +1,6 @@
 import React from 'react';
 import './Calculator.css';
+import Button from './Buttons';
 
 function Calculator() {
   return (
@@ -7,30 +8,30 @@ function Calculator() {
       <div className="screen">
         <input type="text" placeholder="0" readOnly />
       </div>
-      <button type="button">AC</button>
-      <button type="button">+/-</button>
-      <button type="button">%</button>
-      <button type="button" className="box-color">÷</button>
+      <Button type="button" text="AC" />
+      <Button type="button" text="+/-" />
+      <Button type="button" text="%" />
+      <Button type="button" text="÷" className="box-color" />
 
-      <button type="button">1</button>
-      <button type="button">2</button>
-      <button type="button">3</button>
-      <button type="button" className="box-color">+</button>
+      <Button type="button" text="7" />
+      <Button type="button" text="8" />
+      <Button type="button" text="9" />
+      <Button type="button" text="*" className="box-color" />
 
-      <button type="button">4</button>
-      <button type="button">5</button>
-      <button type="button">6</button>
-      <button type="button" className="box-color">*</button>
+      <Button type="button" text="4" />
+      <Button type="button" text="5" />
+      <Button type="button" text="6" />
+      <Button type="button" text="-" className="box-color" />
 
-      <button type="button">7</button>
-      <button type="button">8</button>
-      <button type="button">9</button>
-      <button type="button" className="box-color">-</button>
+      <Button type="button" text="1" />
+      <Button type="button" text="2" />
+      <Button type="button" text="3" />
+      <Button type="button" text="+" className="box-color" />
 
-      <button type="button" className="span-box">0</button>
+      <Button type="button" text="0" className="span-box" />
 
-      <button type="button">.</button>
-      <button type="button" className="box-color">=</button>
+      <Button type="button" text="." />
+      <Button type="button" text="=" className="box-color" />
     </div>
   );
 }
