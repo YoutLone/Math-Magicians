@@ -1,10 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Button component
-function Button({ text, onClick, className }) {
+function Button({ text, className, clickEvent }) {
+  const buttonClassName = className + (className === 'box-color' ? ' box-color' : '');
+
   return (
-    <button type="button" className={className} onClick={onClick}>
+    <button
+      type="button"
+      className={buttonClassName}
+      onClick={() => clickEvent(text)}
+    >
       {text}
     </button>
   );
@@ -12,13 +17,8 @@ function Button({ text, onClick, className }) {
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  onClick: PropTypes.func,
-  className: PropTypes.string,
-};
-
-Button.defaultProps = {
-  onClick: () => {},
-  className: '',
+  className: PropTypes.string.isRequired,
+  clickEvent: PropTypes.func.isRequired,
 };
 
 export default Button;
