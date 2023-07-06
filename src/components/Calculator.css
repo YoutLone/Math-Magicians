@@ -2,13 +2,12 @@
   display: grid;
   height: 58vh;
   width: 28rem;
-  margin: 20px;
-  margin-left: 800px;
+  margin-top: -160px;
+  margin-left: 770px;
   justify-content: end;
   grid-template-columns: repeat(4, 7rem);
   grid-template-rows: repeat(5, 4rem);
   font-family: cursive, sans-serif;
-  border: 2px solid black;
   border-bottom: none;
 }
 
