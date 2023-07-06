@@ -1,4 +1,6 @@
-h1 {
-  margin-left: 20px;
-  text-align: center;
+.container {
+  height: 80vh;
+  display: grid;
+  padding: 50px;
+  align-items: center;
 }
