@@ -1,16 +1,22 @@
 import './App.css';
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import FetchQuote from './components/ApiData';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
 
-const App = () => (
-  <div className="container">
-    <header className="title">
-      <h1>Math-Magicians</h1>
-    </header>
-    <FetchQuote />
-    <Calculator />
-  </div>
-);
+function App() {
+  return (
+    <div className="container">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/quote" element={<FetchQuote />} />
+        <Route path="/calculator" element={<Calculator />} />
+      </Routes>
+    </div>
+  );
+}
 
 export default App;

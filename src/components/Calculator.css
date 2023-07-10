@@ -1,14 +1,8 @@
 .calculator {
   display: grid;
-  height: 58vh;
-  width: 28rem;
-  margin-top: -160px;
-  margin-left: 770px;
-  justify-content: end;
-  grid-template-columns: repeat(4, 7rem);
-  grid-template-rows: repeat(5, 4rem);
-  font-family: cursive, sans-serif;
-  border-bottom: none;
+  margin-left: 510px;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(5rem, auto) repeat(5, 4rem);
 }
 
 .screen {
@@ -17,6 +11,22 @@
   flex-direction: column;
   align-items: flex-end;
   background-color: darkgray;
+}
+
+.main-cal {
+  margin: 7% 3% 2% 0;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.title-cal {
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-left: 45px;
+  width: 210px;
+  font-family: cursive, sans-serif;
 }
 
 button {
