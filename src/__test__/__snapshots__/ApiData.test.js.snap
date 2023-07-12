@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchQuote should match the snapShot 1`] = `
+<div
+  className="quotes"
+/>
+`;
